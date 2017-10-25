@@ -1,0 +1,102 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 110%/1.2em normal normal Helvetica, Arial, Verdana, sans-serif;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-areas: "main sidebar";
+}
+
+.primaryNavigation {
+	background-color: black;
+	color: black;
+	height: 50px;
+}
+
+.siteBrand {
+	grid-area: main;
+}
+
+.primaryNavigation a {
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+.primaryMenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	grid-area: sidebar;
+}
+
+.primaryMenu__item {
+	padding-left: 2em;
+}
+
+/* KATALOG */
+
+main {
+	grid-area: main;
+}
+
+main article form input[type='number'] {
+	width: 40px;
+}
+
+/* BASKET */
+
+aside {
+	grid-area: sidebar;
+}
+
+.basket {
+	width: 100%;
+}
+
+.basket thead th:first-of-type {
+	text-align: left;
+}
+
+.basket thead th:last-of-type {
+	text-align: right;
+}
+
+.basket tbody tr td:first-of-type span {
+	color: grey;
+	font-size: 80%;
+	display: inline-block;
+	width: 30px;
+}
+
+.basket tbody tr td:last-of-type,
+.basket tfoot tr td:last-of-type {
+	text-align: right;
+}
+
+.basket tbody tr td:last-of-type span,
+.basket tfoot tr td:last-of-type span {
+	display: inline-block;
+	width: 70px;
+}
+
+.basket tfoot {
+	font-weight: bold;
+}
+
+.basket tfoot td {
+	border-top: 1px dashed grey;
+}
+
+.basket tfoot td:first-of-type {
+	text-align: right;
+}

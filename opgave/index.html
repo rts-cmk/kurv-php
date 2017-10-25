@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Brians Ostebutik</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<nav class="primaryNavigation">
+		<div class="wrapper">
+			<a href="#" class="siteBrand">Brians Ostebutik</a>
+			<ul class="primaryMenu">
+				<li class="primaryMenu__item"><a href="#" class="primaryMenu__link">Link 1</a></li>
+				<li class="primaryMenu__item"><a href="#" class="primaryMenu__link">Link 2</a></li>
+				<li class="primaryMenu__item"><a href="#" class="primaryMenu__link">Link 3</a></li>
+			</ul>
+	</div>
+	</nav>
+	<div class="wrapper">
+		<main>
+			<section>
+				<h1>Ostekatalog</h1>
+				<article>
+					<form action="?action=addToCart&id=1" method="post">
+						<h2>Olsens Gamle Feta</h2>
+						<p>Kr. 35,14</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo deserunt itaque quas accusantium mollitia. Dolore iste ducimus provident, minus unde, voluptatem earum saepe doloremque perferendis dignissimos voluptatibus iure id non.</p>
+						<p><label for="antal1">Antal</label> <input type="number" name="antal" id="antal1" value="1"> <button>Læg i kurv</button></p>
+					</form>
+				</article>
+				<article>
+					<form action="?action=addToCart&id=2" method="post">
+						<h2>President Brie</h2>
+						<p>Kr. 35,14</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe numquam sint iste ad consequatur eligendi? Dolore beatae eaque libero voluptas explicabo, quo ipsum accusantium doloribus dolorem, dignissimos maiores perspiciatis asperiores!</p>
+						<p><label for="antal2">Antal</label> <input type="number" name="antal" id="antal2" value="1"> <button>Læg i kurv</button></p>
+					</form>
+				</article>
+			</section>
+		</main>
+		<aside>
+			<h2>Min kurv</h2>
+			<table class="basket">
+				<thead>
+					<tr>
+						<th>Vare</th>
+						<th>Pris</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<span>2x</span> Olsens Gamle Feta
+						</td>
+						<td>
+							kr. <span>74,90</span>
+						</td>
+					</tr>
+					<tr>
+							<td>
+								<span>1x</span> President Brie
+							</td>
+							<td>
+								kr. <span>36,45</span>
+							</td>
+						</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>Total</td>
+						<td>
+							Kr. <span>74,90</span>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<button>Vis kurv</button>
+		</aside>
+	</div>
+</body>
+</html>
